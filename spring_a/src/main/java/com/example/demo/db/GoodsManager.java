@@ -30,4 +30,11 @@ public class GoodsManager {
 		session.close();
 		return list;
 	}
+	
+	public static GoodsVo select(int no) {
+		SqlSession session = factory.openSession();
+		GoodsVo g = session.selectOne("goods.select",no);
+		session.close();
+		return g;
+	}
 }

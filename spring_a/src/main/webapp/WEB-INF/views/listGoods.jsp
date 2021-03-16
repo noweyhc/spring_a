@@ -19,7 +19,9 @@
 		<c:forEach var="g" items="${list }">
 			<tr>
 				<td>${g.no }</td>
-				<td>${g.name }</td>
+				<td href="detailGoods.do?no=${g.no }">${g.name }</td>
+				<td>${g.qty }</td>
+				<td>${g.price }</td>
 			</tr>
 		</c:forEach>
 	

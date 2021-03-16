@@ -12,4 +12,7 @@ public class GoodsDao {
 	public List<GoodsVo> findAll(){
 		return GoodsManager.findAll();
 	}
+	public GoodsVo select(int no) {
+		return GoodsManager.select(no);
+	}
 }
